@@ -11,8 +11,7 @@ import java.io.File;
 public class Library
 {
   private ArrayList<Book> childrensBooks = new ArrayList<Book>();
-  private String fileStarter = "C:\\Users\\P4\\Downloads\\Downloaded\\SequentialSearch\\src\\";
-
+  private String fileNameStarter = "C:\\Users\\unknown\\Downloads\\SearchingSequential\\SequentialSearch\\src\\";
   /**
    * Constructor for the Library class. Loads data from the childrensbooksearly1900s.txt file
    * and populates the ArrayList childrensBooks.
@@ -22,7 +21,7 @@ public class Library
     // a try is like an if statement, "throwing" an error if the body of the try fails
     try
     {
-      Scanner sc = new Scanner(new File(fileStarter + "childrensbooksearly1900s.txt"));
+      Scanner sc = new Scanner(new File(fileNameStarter + "childrensbooksearly1900s.txt"));
       while (sc.hasNextLine())
       {
         // String method trim removes whitepsace from the beginning
